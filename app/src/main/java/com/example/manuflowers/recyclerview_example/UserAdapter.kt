@@ -18,6 +18,7 @@ class UserAdapter(private val userList :List<User>) : RecyclerView.Adapter<UserA
     override fun onBindViewHolder(holder: UserAdapterViewHolder, position: Int) {
        val user = userList[position]
         holder.itemView.tvName.text = user.name
+        holder.itemView.tvAge.text = user.age.toString()
     }
 
     /**
